@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Pessoal | Senai</title>
+    <title>Dashboard Pessoal | SENAI</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="dashboard">
@@ -17,64 +17,75 @@
                     <span>AdminPro</span>
                 </div>
                 <button class="sidebar-toggle" id="sidebar-toggle">
-                    <i class="fas fa-bars"></i>
+                    <i class=" fas fa-bars"></i>
                 </button>
-            </div>
-            <nav class="sidebar-nav">
-                <ul>
-                    <li class="active">
-                        <a href="#">
-                            <i class="fas fa-tachometer-alt"></i>
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li class="active">
+                            <a href="#">
+                                <i class="fas fa-tachometer-alt"></i>
                                 <span>Dashboard</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="#">
-                            <i class="fas fa-users"></i>
-                            <span>Usuário</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="#">
-                            <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <i class="fas fa-users"></i>
+                                <span>Usuários</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <i class="fas fa-shopping-cart"></i>
                                 <span>Vendas</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="#">
-                            <i class="fas fa-chart-bar"></i>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <i class="fas fa-chart-bar"></i>
                                 <span>Relatórios</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="#">
-                            <i class="fas fa-cog"></i>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <i class="fas fa-cog">
+                                </i>
                                 <span>Configurações</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="sidebar-footer">
-                <a href="#">
-                    <i class="fas fa-sign-out-alt"></i>
-                    <span>Sair</span>
-                </a>
+                                
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sidebar-footer">
+                    <a href="#">
+                        <i class=" fas fa-sign-out-alt"></i>
+                        <span>Sair</span>
+                    </a>
+                </div>
             </div>
         </aside>
-        <!--Conteúdo Principal-->
-        <div class="main-content">
-            <header class="topbar">
-                <div class="search-area">
-                    <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Pesquisar....">
+<!--Conteúdo Principal-->
+       <div class="main-content">
+        <header class="topbar">
+            <div class="search-area">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Pesquisar....">
+            </div>
+            <div class="user-area">
+                <button class="dark-mode-toggle" id="darkModeToggle">
+                    <i class=" fas fa-moon"></i>
+                </button>
+                <div class="notification">
+                    <i class=" fas fa-bell"></i>
+                    <span class="badge">4</span>
                 </div>
-                <div class="user-area">
-                    <button class="dark-model-toggle" id="darkModelToggle"><i class="fas fa-moon"></i></button>
-                    <div class="notification"></div>
+                <div class="user-profile">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1ea3dab9-2108-40e4-a0f2-b37bf4676e54/ddx0qlk-82c355e6-6f46-4cbe-a1e1-abd9e705bb74.jpg/v1/fill/w_1024,h_652,q_75,strp/toretto_s_1970_dodge_charger_fast_and_furious_by_professorwagstaff_ddx0qlk-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjUyIiwicGF0aCI6Ii9mLzFlYTNkYWI5LTIxMDgtNDBlNC1hMGYyLWIzN2JmNDY3NmU1NC9kZHgwcWxrLTgyYzM1NWU2LTZmNDYtNGNiZS1hMWUxLWFiZDllNzA1YmI3NC5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.XZA16DoXJ0wkpucj6Cuqtr0BZ7SlOGs652Pe-yNjJBQ" width="200px">
+                    <span>Davi carvalho</span>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
-            </header>
-        </div>
+            </div>
+        </header>
+      </div>
     </div>
-
 </body>
 </html>
